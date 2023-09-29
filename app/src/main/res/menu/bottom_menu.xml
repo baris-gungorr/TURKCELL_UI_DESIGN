@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/hesapFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/home_icon"
+        android:visible="true"
+        android:iconTint="@color/mavi"
+        
+        android:title="Hesabım" />
+    <item
+
+        android:id="@+id/paketlerFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/paket_icon"
+
+        android:title="Paketler"
+        />
+    <item
+        android:id="@+id/islemFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/islem_icon"
+
+        android:title="İşlemler" />
+    <item
+        android:id="@+id/uygulamaFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/widgets_icon"
+
+        android:title="Uygulamalar" />
+    <item
+        android:id="@+id/yardimFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/help_icon"
+
+        android:title="Yardım" />
+</menu>

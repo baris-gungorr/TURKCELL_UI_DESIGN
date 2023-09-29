@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/hesapFragment">
+
+    <fragment
+        android:id="@+id/hesapFragment"
+        android:name="com.barisgungorr.turkcellapp.fragments.HesapFragment"
+        android:label="fragment_hesap"
+        tools:layout="@layout/fragment_hesap" >
+        <action
+            android:id="@+id/action_hesapFragment_to_paketlerFragment3"
+            app:destination="@id/paketlerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/uygulamaFragment"
+        android:name="com.barisgungorr.turkcellapp.fragments.UygulamaFragment"
+        android:label="fragment_uygulama"
+        tools:layout="@layout/fragment_uygulama" >
+        <action
+            android:id="@+id/action_uygulamaFragment_to_yardimFragment"
+            app:destination="@id/yardimFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/yardimFragment"
+        android:name="com.barisgungorr.turkcellapp.fragments.YardimFragment"
+        android:label="fragment_yardim"
+        tools:layout="@layout/fragment_yardim" />
+    <fragment
+        android:id="@+id/islemFragment"
+        android:name="com.barisgungorr.turkcellapp.fragments.IslemFragment"
+        android:label="fragment_islem"
+        tools:layout="@layout/fragment_islem" >
+        <action
+            android:id="@+id/action_islemFragment_to_uygulamaFragment"
+            app:destination="@id/uygulamaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/paketlerFragment"
+        android:name="com.barisgungorr.turkcellapp.fragments.PaketlerFragment"
+        android:label="fragment_paketler"
+        tools:layout="@layout/fragment_paketler" >
+        <action
+            android:id="@+id/action_paketlerFragment3_to_islemFragment2"
+            app:destination="@id/islemFragment" />
+    </fragment>
+</navigation>
